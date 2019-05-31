@@ -14,6 +14,8 @@ const dog = {
     ],
     'fur-color': 'brown',
     2: 'number 2',
+    //keys that have values of functions are called methods
+    
 };
 //use dot notation to call objects
 console.log(dog.age); //10
