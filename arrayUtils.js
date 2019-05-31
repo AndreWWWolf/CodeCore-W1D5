@@ -6,7 +6,7 @@ const arrayUtils = {
         return arr[0];
     },
     take: function(arr, n) {
-        arr.slice(0, n);
+        return arr.slice(n, n+1);
     }
 };
 
