@@ -28,3 +28,24 @@ console.log(dog[1+1]); //'number 2'
 dog.middleName = 'Pemberton';
 console.log(dog.middleName);
 console.log(dog.toys);
+
+//Object functions
+console.log(Object.keys(dog)); //will print all keys of 'dog'
+console.log(Object.values(dog)); //will print all values of 'dog'
+//how to merge objects
+const mergeObject = Object.assign(dog, {friends: ['fluffy', 'blue'], favFood: 'cheese'});
+console.log(mergeObject);
+//IMPORTANT: using Object.assign will permanently mutate the current object. console.log(dog); will now print values assigned in mergeObject.
+//To avoid mutating original object:
+const copyObject = Object.assign({}, dog, {job: 'look good'});
+console.log(copyObject); //will show new key: value pairs added from copyObject.
+console.log(dog); //will NOT include new key: value pairs added from copyObject.
+
+//iterate over objects
+
+//for in loop
+
+for (let key in dog) {
+    console.log("key:", key, "value:", dog[key]);
+}
+
