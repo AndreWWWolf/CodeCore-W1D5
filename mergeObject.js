@@ -33,5 +33,6 @@ function merge(objA, objB) {
 //   const objB = {
     // name: 'Shannon',
     // message: 'Sand is brown'
-}
+    // }
+    
   console.log(merge(objA, objB));
