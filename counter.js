@@ -18,6 +18,7 @@ const counter = {
   }
   
   const counterCopy = Object.assign({}, counter);
+  
   console.log(counterCopy.inc()); // 1
   counterCopy.set(2);
   console.log(counterCopy.inc()); // 3
@@ -27,3 +28,6 @@ const counter = {
   counterCopy.set(1);
   console.log(counterCopy.dec()); // 2
   console.log(counterCopy.dec()); // 1
+
+
+  
